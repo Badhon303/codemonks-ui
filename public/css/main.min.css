@@ -358,19 +358,19 @@
   background-image: url(../img/avatars/1400x1400_ava-01.webp);
 }
 .divider-image-1 {
-  background-image: url(../img/illustrations/1920x1080_divider-01.webp);
+  background-image: url(../img/illustrations/divider-1.webp);
 }
 .divider-image-2 {
-  background-image: url(../img/illustrations/1920x1080_divider-02.webp);
+  background-image: url(../img/illustrations/divider-2.webp);
 }
 .divider-image-3 {
-  background-image: url(../img/illustrations/1920x1080_divider-03.webp);
+  background-image: url(../img/illustrations/divider-2.webp);
 }
 .divider-image-4 {
-  background-image: url(../img/illustrations/1920x1080_divider-04.webp);
+  background-image: url(../img/illustrations/divider-1.webp);
 }
 .divider-image-5 {
-  background-image: url(../img/illustrations/2400x1350_divider-05.webp);
+  background-image: url(../img/works/preview/1400x1080_prv-02.webp);
 }
 .divider-image-6 {
   background-image: url(../img/illustrations/1920x1080_divider-06.webp);
@@ -388,34 +388,34 @@
   background-image: url(../img/illustrations/2400x1600_divider-10.webp);
 }
 .preview-image-1 {
-  background-image: url(../img/works/preview/1400x1400_prv-01.webp);
+  background-image: url(../img/works/preview/1400x1080_prv-01.webp);
 }
 .preview-image-2 {
-  background-image: url(../img/works/preview/1400x1400_prv-02.webp);
+  background-image: url(../img/works/preview/1400x1080_prv-02.webp);
 }
 .preview-image-3 {
-  background-image: url(../img/works/preview/1400x1400_prv-03.webp);
+  background-image: url(../img/works/preview/1400x1080_prv-03.webp);
 }
 .preview-image-4 {
-  background-image: url(../img/works/preview/1400x1400_prv-04.webp);
+  background-image: url(../img/works/preview/1400x1080_prv-04.webp);
 }
 .preview-image-5 {
-  background-image: url(../img/works/preview/1400x1400_prv-05.webp);
+  background-image: url(../img/works/preview/1920x1080_prv-05.webp);
 }
 .preview-image-6 {
-  background-image: url(../img/works/preview/1400x1400_prv-06.webp);
+  background-image: url(../img/works/preview/1920x1080_prv-07.webp);
 }
 .preview-image-7 {
-  background-image: url(../img/works/preview/1400x1400_prv-07.webp);
+  background-image: url(../img/works/preview/1920x1080_prv-07.webp);
 }
 .blog-preview-image-1 {
-  background-image: url(../img/blog/preview/1000x1250_prv-01.webp);
+  background-image: url(../img/blog/1000x1250_psec-01.webp);
 }
 .blog-preview-image-2 {
-  background-image: url(../img/blog/preview/1000x1250_prv-02.webp);
+  background-image: url(../img/blog/1000x1250_psec-02.webp);
 }
 .blog-preview-image-3 {
-  background-image: url(../img/blog/preview/1000x1250_prv-03.webp);
+  background-image: url(../img/blog/1000x1250_psec-01.webp);
 }
 .headline-img-01::before {
   background-image: url(../img/illustrations/400x200_hdl-01.webp);
@@ -1356,7 +1356,7 @@ html.lenis body {
 .inner-headline__title {
   position: relative;
 }
-.inner-headline__title.headline-img-before::before {
+/* .inner-headline__title.headline-img-before::before {
   content: "";
   display: inline-block;
   width: 8rem;
@@ -1368,7 +1368,7 @@ html.lenis body {
   background-position: center;
   -moz-background-size: cover;
   background-size: cover;
-}
+} */
 .inner-headline__title.headline-img-after::after {
   content: "";
   display: inline-block;
@@ -18807,6 +18807,9 @@ form textarea:required:valid {
   justify-content: center;
   width: 100%;
   height: 100%;
+    /* display: flex;
+  align-items: center;
+  gap: 1rem; */
 }
 .mxd-partners-cards__inner::before {
   content: "";
@@ -18846,7 +18849,15 @@ form textarea:required:valid {
 .mxd-partners-cards__logo {
   width: 170px;
   height: auto;
+    /* flex-shrink: 0; */
+
 }
+
+/* .mxd-partners-cards__name .t-caption {
+  color: #adadad;
+  margin: 0;
+  font-size: 5rem;
+} */
 .mxd-partners-cards__logo img {
   opacity: 0.6;
   -webkit-transition: opacity var(--_animspeed-slow) ease;
@@ -18859,20 +18870,20 @@ form textarea:required:valid {
 .mxd-tech-stack-cards.grid-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [2];
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
 }
 @media only screen and (min-width: 768px) {
   .mxd-tech-stack-cards.grid-cards {
-    -ms-grid-columns: (1fr) [3];
+    -ms-grid-columns: (1fr) (1fr) (1fr);
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (min-width: 1400px) {
   .mxd-tech-stack-cards.grid-cards {
-    -ms-grid-columns: (1fr) [4];
+    -ms-grid-columns: (1fr) (1fr) (1fr) (1fr);
     grid-template-columns: repeat(4, 1fr);
   }
 }
