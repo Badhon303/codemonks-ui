@@ -470,6 +470,7 @@ input::-moz-focus-inner {
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+appearance: none;
   appearance: none;
 }
 a:focus,
@@ -1643,26 +1644,12 @@ html.lenis body {
   font: normal var(--fw-regular) 1.8rem/1.4 var(--_font-accent);
   color: var(--t-medium);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-bright), var(--t-bright));
-  -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s, color 0.3s;
-  -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
   transition: background-size 0.3s, color 0.3s;
-  transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
 }
 .no-touch .mxd-paragraph__lists-item ul li a:hover {
   color: var(--t-bright);
@@ -1897,47 +1884,16 @@ p span {
 }
 p a {
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--t-medium)),
-      to(var(--t-medium))
-    ),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background: -moz-linear-gradient(left, var(--t-medium), var(--t-medium)),
-    -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background: linear-gradient(to right, var(--t-medium), var(--t-medium)),
     linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
-  transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
+
 p a.opposite {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--t-opp-medium)),
-      to(var(--t-opp-medium))
-    ),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background: -moz-linear-gradient(
-      left,
-      var(--t-opp-medium),
-      var(--t-opp-medium)
-    ),
-    -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  background: linear-gradient(
-      to right,
-      var(--t-opp-medium),
-      var(--t-opp-medium)
-    ),
+  background: linear-gradient(to right, var(--t-opp-medium), var(--t-opp-medium)),
     linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 .no-touch p a:hover {
@@ -1983,26 +1939,12 @@ p.t-muted a {
   font-weight: var(--fw-regular);
   color: var(--t-muted);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--t-muted)),
-      to(var(--t-muted))
-    ),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background: -moz-linear-gradient(left, var(--t-muted), var(--t-muted)),
-    -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background: linear-gradient(to right, var(--t-muted), var(--t-muted)),
     linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
-  transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
 .no-touch p.t-muted a:hover {
   color: var(--t-medium);
@@ -2021,34 +1963,12 @@ p.t-opposite-medium {
 p.t-opposite-medium a {
   color: var(--t-opp-bright);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--t-opp-medium)),
-      to(var(--t-opp-medium))
-    ),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background: -moz-linear-gradient(
-      left,
-      var(--t-opp-medium),
-      var(--t-opp-medium)
-    ),
-    -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  background: linear-gradient(
-      to right,
-      var(--t-opp-medium),
-      var(--t-opp-medium)
-    ),
+  background: linear-gradient(to right, var(--t-opp-medium), var(--t-opp-medium)),
     linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
-  transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
 .no-touch p.t-opposite-medium a:hover {
   color: var(--t-opp-bright);
@@ -4458,29 +4378,12 @@ form textarea:required:valid {
 }
 .mxd-data-list__content a {
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--st-medium)),
-      to(var(--st-medium))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--accent)), to(var(--accent)));
-  background: -moz-linear-gradient(left, var(--st-medium), var(--st-medium)),
-    -moz-linear-gradient(left, var(--accent), var(--accent));
   background: linear-gradient(to right, var(--st-medium), var(--st-medium)),
     linear-gradient(to right, var(--accent), var(--accent));
-  -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
-  transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
-  -webkit-transform-origin: bottom right;
-  -moz-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
   transform-origin: bottom right;
 }
 .no-touch .mxd-data-list__content a:hover {
@@ -4956,24 +4859,12 @@ form textarea:required:valid {
   font: normal var(--fw-regular) 2.2rem/1.4 var(--_font-accent);
   color: var(--t-medium);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-bright), var(--t-bright));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s, color 0.3s;
-  -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
   transition: background-size 0.3s, color 0.3s;
   transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
 }
@@ -5639,24 +5530,12 @@ form textarea:required:valid {
 .mxd-menu__data p a {
   color: var(--t-opp-medium);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--t-opp-muted)),
-      to(var(--t-opp-muted))
-    ),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background: -moz-linear-gradient(left, var(--t-opp-muted), var(--t-opp-muted)),
-    -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background: linear-gradient(to right, var(--t-opp-muted), var(--t-opp-muted)),
     linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
   transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
@@ -7255,8 +7134,8 @@ form textarea:required:valid {
 @media only screen and (min-width: 768px) {
   .mxd-hero-01__marquee {
     top: 0;
-    right: 7rem;
-    width: 265px;
+    right: 6rem;
+    width: 289px;
     height: 88px;
     -moz-border-radius: 4.4rem;
     border-radius: 4.4rem;
@@ -7277,8 +7156,8 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1200px) {
   .mxd-hero-01__marquee {
-    right: 11rem;
-    width: 389px;
+    right: 8rem;
+    width: 430px;
     height: 132px;
     -moz-border-radius: 6.6rem;
     border-radius: 6.6rem;
@@ -7297,8 +7176,8 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1600px) {
   .mxd-hero-01__marquee {
-    right: 13.3rem;
-    width: 430px;
+    right: 12rem;
+    width: 530px;
     height: 154px;
     -moz-border-radius: 7.7rem;
     border-radius: 7.7rem;
@@ -7417,7 +7296,7 @@ form textarea:required:valid {
     white-space: nowrap;
   }
   .hero-01-title__item.title-item-transparent {
-    padding: 0 5rem;
+    padding: 0 2rem;
     -moz-border-radius: 4.4rem;
     border-radius: 4.4rem;
     color: var(--t-opp-bright);
@@ -7436,7 +7315,7 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1200px) {
   .hero-01-title__item.title-item-transparent {
-    padding: 0 7rem;
+    padding: 0 5rem;
     -moz-border-radius: 6.6rem;
     border-radius: 6.6rem;
   }
@@ -7611,37 +7490,17 @@ form textarea:required:valid {
 .dash-line {
   --s: 0.8rem;
   height: 3px;
-  background: -moz-radial-gradient(
-        circle closest-side,
-        var(--st-muted) 98%,
-        rgba(0, 0, 0, 0)
-      )
-      0 0 / var(--s) 100%,
-    -moz-linear-gradient(left, var(--st-muted) 50%, rgba(0, 0, 0, 0) 0) -moz-calc(
-        var(--s) / 2
-      )
-      0 / calc(2 * var(--s)) 100%;
-  background: radial-gradient(
-        circle closest-side,
-        var(--st-muted) 98%,
-        rgba(0, 0, 0, 0)
-      )
-      0 0 / var(--s) 100%,
-    -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        color-stop(50%, var(--st-muted)),
-        color-stop(0, rgba(0, 0, 0, 0))
-      ) calc(var(--s) / 2) 0 / calc(2 * var(--s)) 100%;
-  background: radial-gradient(
-        circle closest-side,
-        var(--st-muted) 98%,
-        rgba(0, 0, 0, 0)
-      )
-      0 0 / var(--s) 100%,
-    linear-gradient(90deg, var(--st-muted) 50%, rgba(0, 0, 0, 0) 0)
-      calc(var(--s) / 2) 0 / calc(2 * var(--s)) 100%;
+  background: 
+    radial-gradient(
+      circle closest-side,
+      var(--st-muted) 98%,
+      transparent
+    ) 0 0 / var(--s) 100%,
+    linear-gradient(
+      90deg,
+      var(--st-muted) 50%,
+      transparent 0
+    ) calc(var(--s) / 2) 0 / calc(2 * var(--s)) 100%;
 }
 .mxd-hero-01__data-btn {
   margin-bottom: 3.1rem;
@@ -9444,18 +9303,6 @@ form textarea:required:valid {
     width: 100%;
     height: 100%;
     background: var(--base);
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(20%, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0.6))
-    );
-    background: -moz-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0) 20%,
-      rgba(0, 0, 0, 0.6) 100%
-    );
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 20%,
@@ -10641,24 +10488,12 @@ form textarea:required:valid {
   display: inline;
   color: var(--t-muted);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-muted)), to(var(--t-muted)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-muted), var(--t-muted));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-muted), var(--t-muted));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
   transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
@@ -10669,14 +10504,6 @@ form textarea:required:valid {
 }
 .breadcrumbs__nav span.current-item {
   text-decoration: none;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--t-muted)),
-    to(var(--t-muted))
-  );
-  background: -moz-linear-gradient(left, var(--t-muted), var(--t-muted));
   background: linear-gradient(to right, var(--t-muted), var(--t-muted));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
@@ -10685,24 +10512,12 @@ form textarea:required:valid {
 }
 .breadcrumbs__nav span.current-item a {
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--t-muted)),
-      to(var(--t-muted))
-    ),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background: -moz-linear-gradient(left, var(--t-muted), var(--t-muted)),
-    -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background: linear-gradient(to right, var(--t-muted), var(--t-muted)),
     linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
   transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
@@ -10947,16 +10762,6 @@ form textarea:required:valid {
   display: inline;
   color: var(--pt-t-light-bright);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--pt-t-light-bright)), to(var(--pt-t-light-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--pt-t-light-bright), var(--pt-t-light-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(
       to right,
@@ -10967,8 +10772,6 @@ form textarea:required:valid {
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
   transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
@@ -11146,24 +10949,12 @@ form textarea:required:valid {
   display: inline;
   color: var(--t-bright);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-bright), var(--t-bright));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s, color 0.3s;
-  -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
   transition: background-size 0.3s, color 0.3s;
   transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
 }
@@ -11345,24 +11136,12 @@ form textarea:required:valid {
   display: inline;
   color: var(--t-bright);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-bright), var(--t-bright));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s, color 0.3s;
-  -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
   transition: background-size 0.3s, color 0.3s;
   transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
 }
@@ -11503,29 +11282,17 @@ form textarea:required:valid {
     display: inline;
     width: 530px;
   }
-  .mxd-projects-archive__title p span {
-    text-decoration: none;
-    background: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        from(rgba(0, 0, 0, 0)),
-        to(rgba(0, 0, 0, 0))
-      ),
-      -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      linear-gradient(to right, var(--t-bright), var(--t-bright));
-    -moz-background-size: 100% 1px, 0 1px;
-    background-size: 100% 1px, 0 1px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    -webkit-transition: background-size 0.3s, color 0.3s;
-    -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
-    transition: background-size 0.3s, color 0.3s;
-    transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
-  }
+.mxd-projects-archive__title p span {
+  text-decoration: none;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    linear-gradient(to right, var(--t-bright), var(--t-bright));
+  -moz-background-size: 100% 1px, 0 1px;
+  background-size: 100% 1px, 0 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, color 0.3s;
+  transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
+}
   .no-touch .mxd-projects-archive__title p span:hover {
     color: var(--t-bright);
     -moz-background-size: 0 1px, 100% 1px;
@@ -11823,24 +11590,12 @@ form textarea:required:valid {
   display: inline;
   color: var(--t-bright);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-bright), var(--t-bright));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s, color 0.3s;
-  -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
   transition: background-size 0.3s, color 0.3s;
   transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
 }
@@ -12136,24 +11891,12 @@ form textarea:required:valid {
   display: inline;
   color: var(--t-muted);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-muted)), to(var(--t-muted)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-muted), var(--t-muted));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-muted), var(--t-muted));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
   transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
@@ -12164,14 +11907,6 @@ form textarea:required:valid {
 }
 .mxd-article__breadcrumbs span.current-item {
   text-decoration: none;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(var(--t-muted)),
-    to(var(--t-muted))
-  );
-  background: -moz-linear-gradient(left, var(--t-muted), var(--t-muted));
   background: linear-gradient(to right, var(--t-muted), var(--t-muted));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
@@ -12180,24 +11915,12 @@ form textarea:required:valid {
 }
 .mxd-article__breadcrumbs span.current-item a {
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--t-muted)),
-      to(var(--t-muted))
-    ),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background: -moz-linear-gradient(left, var(--t-muted), var(--t-muted)),
-    -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background: linear-gradient(to right, var(--t-muted), var(--t-muted)),
     linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
   transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
@@ -12771,24 +12494,12 @@ form textarea:required:valid {
 }
 .mxd-article-navigation__link span {
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-bright), var(--t-bright));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s, color 0.3s;
-  -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
   transition: background-size 0.3s, color 0.3s;
   transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
 }
@@ -13938,24 +13649,12 @@ form textarea:required:valid {
 }
 .demo-swiper-slide__descr a span {
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-bright), var(--t-bright));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s, color 0.3s;
-  -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
   transition: background-size 0.3s, color 0.3s;
   transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
 }
@@ -14962,34 +14661,54 @@ form textarea:required:valid {
   left: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   opacity: 0;
-  -webkit-transition: opacity var(--_animspeed-medium);
-  -moz-transition: opacity var(--_animspeed-medium);
   transition: opacity var(--_animspeed-medium);
+  z-index: 1;
 }
 .mxd-pinned__img-item.is-active {
   opacity: 1;
+  z-index: 2;
 }
 .mxd-pinned__img {
   width: auto;
   height: 30rem;
-  -o-object-fit: cover;
   object-fit: cover;
-  -moz-border-radius: 2em;
   border-radius: 2em;
 }
+
+/* Fix for pinned images on larger screens */
+@media only screen and (min-width: 1200px) {
+  .mxd-pinned__img {
+    max-width: 80%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 2em;
+  }
+  
+  /* Ensure proper container sizing */
+  .mxd-pinned__img-wrap {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .mxd-pinned__img-list {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Make sure desktop images are visible */
+  .mxd-pinned__img-item {
+    display: flex !important;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .mxd-pinned__img {
     height: 40rem;
@@ -15045,37 +14764,17 @@ form textarea:required:valid {
   }
 }
 .mxd-pinned__text-item {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: start;
-  -moz-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
 }
 @media only screen and (min-width: 1200px) {
   .mxd-pinned__text-item {
-    height: -moz-calc(100vh - 12rem);
     height: calc(100vh - 12rem);
     max-width: 640px;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     opacity: 0.2;
-    -webkit-transition: opacity var(--_animspeed-medium);
-    -moz-transition: opacity var(--_animspeed-medium);
     transition: opacity var(--_animspeed-medium);
   }
   .mxd-pinned__text-item.is-active {
@@ -15084,27 +14783,44 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1600px) {
   .mxd-pinned__text-item {
-    height: -moz-calc(100vh - 18rem);
     height: calc(100vh - 18rem);
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .mxd-pinned {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .mxd-pinned__visual {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mxd-pinned__content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .mxd-pinned__text-wrap {
+    width: 100%;
+  }
+}
 .mxd-pinned__img-mobile {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   height: 460px;
   background-color: var(--base-tint);
-  -moz-border-radius: var(--_radius-l);
   border-radius: var(--_radius-l);
   margin-bottom: 2.4rem;
 }
@@ -15112,9 +14828,7 @@ form textarea:required:valid {
   display: block;
   width: auto;
   height: 24rem;
-  -o-object-fit: cover;
   object-fit: cover;
-  -moz-border-radius: 2em;
   border-radius: 2em;
 }
 @media only screen and (min-width: 768px) {
@@ -18486,18 +18200,6 @@ form textarea:required:valid {
     right: 0;
     width: 6rem;
     height: 100%;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(var(--base-rgb), 0)),
-      to(rgba(var(--base-rgb), 1))
-    );
-    background: -moz-linear-gradient(
-      left,
-      rgba(var(--base-rgb), 0) 0,
-      rgba(var(--base-rgb), 1) 100%
-    );
     background: linear-gradient(
       to right,
       rgba(var(--base-rgb), 0) 0,
@@ -18859,7 +18561,7 @@ form textarea:required:valid {
   font-size: 5rem;
 } */
 .mxd-partners-cards__logo img {
-  opacity: 0.6;
+  opacity: 0.7;
   -webkit-transition: opacity var(--_animspeed-slow) ease;
   -moz-transition: opacity var(--_animspeed-slow) ease;
   transition: opacity var(--_animspeed-slow) ease;
@@ -19211,24 +18913,12 @@ form textarea:required:valid {
   line-height: 1.2;
   color: var(--t-medium);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-bright), var(--t-bright));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s, color 0.3s;
-  -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
   transition: background-size 0.3s, color 0.3s;
   transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
 }
@@ -19590,24 +19280,12 @@ form textarea:required:valid {
   font: normal var(--fw-regular) 1.8rem/1.2 var(--_font-accent);
   color: var(--t-bright);
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--t-bright)),
-      to(var(--t-bright))
-    ),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background: -moz-linear-gradient(left, var(--t-bright), var(--t-bright)),
-    -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background: linear-gradient(to right, var(--t-bright), var(--t-bright)),
     linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.4s, color 0.3s;
-  -moz-transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
   transition: background-size 0.4s, color 0.3s;
   transition: background-size 0.4s, color 0.3s, -moz-background-size 0.4s;
 }
@@ -20182,24 +19860,12 @@ form textarea:required:valid {
 }
 .mxd-project__link span {
   text-decoration: none;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0))
-    ),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to right, var(--t-bright), var(--t-bright));
   -moz-background-size: 100% 1px, 0 1px;
   background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s, color 0.3s;
-  -moz-transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
   transition: background-size 0.3s, color 0.3s;
   transition: background-size 0.3s, color 0.3s, -moz-background-size 0.3s;
 }
