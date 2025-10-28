@@ -5649,6 +5649,7 @@ table {
   );
   text-underline-offset: 0.25em;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -11191,7 +11192,6 @@ table {
 }
 .ph-bold {
   font-family: Phosphor-Bold !important;
-  speak: never;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -15811,7 +15811,6 @@ table {
 }
 .ph-duotone {
   font-family: Phosphor-Duotone !important;
-  speak: never;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -27920,7 +27919,6 @@ table {
 }
 .ph-fill {
   font-family: Phosphor-Fill !important;
-  speak: never;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -32540,7 +32538,6 @@ table {
 }
 .ph-light {
   font-family: Phosphor-Light !important;
-  speak: never;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -37160,7 +37157,6 @@ table {
 }
 .ph {
   font-family: Phosphor !important;
-  speak: never;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -41780,7 +41776,6 @@ table {
 }
 .ph-thin {
   font-family: Phosphor-Thin !important;
-  speak: never;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -46503,6 +46498,7 @@ table {
   -moz-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -46606,13 +46602,8 @@ table {
   background: rgba(0, 0, 0, 0.15);
 }
 .swiper-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(rgba(0, 0, 0, 0.5)),
-    to(rgba(0, 0, 0, 0))
-  );
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+
   background-image: -moz-linear-gradient(
     right,
     rgba(0, 0, 0, 0.5),
@@ -46625,18 +46616,6 @@ table {
   );
 }
 .swiper-3d .swiper-slide-shadow-right {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(0, 0, 0, 0.5)),
-    to(rgba(0, 0, 0, 0))
-  );
-  background-image: -moz-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0)
-  );
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.5),
@@ -46644,18 +46623,6 @@ table {
   );
 }
 .swiper-3d .swiper-slide-shadow-top {
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(rgba(0, 0, 0, 0.5)),
-    to(rgba(0, 0, 0, 0))
-  );
-  background-image: -moz-linear-gradient(
-    bottom,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0)
-  );
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.5),
@@ -46663,18 +46630,6 @@ table {
   );
 }
 .swiper-3d .swiper-slide-shadow-bottom {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 0.5)),
-    to(rgba(0, 0, 0, 0))
-  );
-  background-image: -moz-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0)
-  );
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.5),
@@ -46748,6 +46703,7 @@ table {
 }
 .swiper-virtual .swiper-slide {
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   transform: translateZ(0);
@@ -46961,6 +46917,7 @@ button.swiper-pagination-bullet {
   -moz-box-shadow: none;
   box-shadow: none;
   -webkit-appearance: none;
+appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
@@ -47237,6 +47194,7 @@ button.swiper-pagination-bullet {
 .swiper-cube .swiper-slide {
   pointer-events: none;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
@@ -47297,6 +47255,7 @@ button.swiper-pagination-bullet {
 .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-top {
   z-index: 0;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -47306,6 +47265,7 @@ button.swiper-pagination-bullet {
 .swiper-flip .swiper-slide {
   pointer-events: none;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
@@ -47323,11 +47283,13 @@ button.swiper-pagination-bullet {
 .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-top {
   z-index: 0;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .swiper-creative .swiper-slide {
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
@@ -47347,6 +47309,7 @@ button.swiper-pagination-bullet {
   -ms-transform-origin: center bottom;
   transform-origin: center bottom;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
@@ -47364,6 +47327,7 @@ button.swiper-pagination-bullet {
   z-index: 1500;
   -webkit-text-size-adjust: 100%;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   outline: 0;
 }
 .pswp * {
@@ -47411,6 +47375,7 @@ button.swiper-pagination-bullet {
   -moz-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   will-change: opacity;
 }
 .pswp__scroll-wrap {
@@ -47471,6 +47436,7 @@ button.swiper-pagination-bullet {
 .pswp__container,
 .pswp__zoom-wrap {
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
 }
 .pswp__item {
   position: absolute;
@@ -47489,6 +47455,7 @@ button.swiper-pagination-bullet {
 }
 .pswp__img--placeholder {
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
 }
 .pswp__img--placeholder--blank {
   background: #222;
@@ -47522,6 +47489,7 @@ button.swiper-pagination-bullet {
   cursor: pointer;
   overflow: visible;
   -webkit-appearance: none;
+appearance: none;
   display: block;
   border: 0;
   padding: 0;
@@ -47658,6 +47626,7 @@ button.swiper-pagination-bullet {
   -moz-transition: opacity 0.25s ease-out;
   transition: opacity 0.25s ease-out;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   will-change: opacity;
 }
 .pswp__share-modal--hidden {
@@ -47686,6 +47655,7 @@ button.swiper-pagination-bullet {
   transition: transform 0.25s;
   transition: transform 0.25s, -webkit-transform 0.25s, -moz-transform 0.25s;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   will-change: transform;
 }
 .pswp__share-tooltip a {
@@ -47964,6 +47934,7 @@ a.pswp__share--download:hover {
 .pswp__caption,
 .pswp__top-bar {
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
   will-change: opacity;
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   -moz-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
@@ -48025,6 +47996,7 @@ a.pswp__share--download:hover {
   position: fixed;
   outline: 0 !important;
   -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
 }
 .mfp-container {
   text-align: center;
@@ -48123,6 +48095,7 @@ button.mfp-close {
   background: 0 0;
   border: 0;
   -webkit-appearance: none;
+appearance: none;
   display: block;
   outline: 0;
   padding: 0;
