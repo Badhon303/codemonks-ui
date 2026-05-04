@@ -4923,6 +4923,14 @@ form textarea:required:valid {
     gap: 1.6rem;
   }
 
+  .projects-stack {
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
   .stack-item {
     position: relative !important;
     height: auto !important;
@@ -4935,6 +4943,15 @@ form textarea:required:valid {
 
   .mxd-services-stack__inner {
     height: auto !important;
+  }
+
+  .projects-stack .stack-item {
+    min-height: 60vh;
+  }
+
+  .projects-stack .mxd-projects-stack__inner {
+    min-height: 60vh;
+    height: 100%;
   }
 
   .anim-uni-in-up,
