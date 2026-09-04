@@ -370,7 +370,7 @@
   background-image: url(../img/illustrations/divider-1.webp);
 }
 .divider-image-5 {
-  background-image: url(../img/works/preview/1400x1080_prv-02.webp);
+  background-image: url(../img/works/preview/cm-1400x1080_prv-02.png);
 }
 .divider-image-6 {
   background-image: url(../img/illustrations/1920x1080_divider-06.webp);
@@ -4132,6 +4132,26 @@ form textarea:required:valid {
   justify-content: left;
   gap: 1rem;
 }
+.mxd-logo__brand-icon,
+.mxd-logo__brand-word {
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+.mxd-logo__brand-icon {
+  width: 15rem;
+}
+.mxd-logo__brand-word {
+  width: 8rem;
+}
+@media only screen and (min-width: 768px) {
+  .mxd-logo__brand-icon {
+    width: 15rem;
+  }
+  .mxd-logo__brand-word {
+    width: 10rem;
+  }
+}
 @media only screen and (min-width: 768px) {
   .mxd-logo {
     gap: 1.4rem;
@@ -7567,9 +7587,9 @@ form textarea:required:valid {
     left: -5%;
   }
   .hero-01-image.image-02 {
-    top: -36%;
+    top: -29%;
     left: auto;
-    right: 5%;
+    right: 9%;
   }
   .hero-01-image.image-03 {
     top: 90%;
@@ -7587,8 +7607,8 @@ form textarea:required:valid {
     width: 140px;
   }
   .hero-01-image.image-02 {
-    top: -34%;
-    right: 6%;
+    top: -29%;
+    right: 9%;
   }
   .hero-01-image.image-03 {
     top: 80%;
@@ -7608,8 +7628,8 @@ form textarea:required:valid {
     left: 38%;
   }
   .hero-01-image.image-02 {
-    top: -36%;
-    right: 5%;
+    top: -29%;
+    right: 9%;
   }
 }
 .mxd-hero-01__bottom {
